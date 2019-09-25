@@ -1,18 +1,16 @@
-import Slider from 'material-ui/Slider'
+import RadioGroup from '@material-ui/core/RadioGroup'
 import createComponent from './createComponent'
 
 export default createComponent(
-  Slider,
+  RadioGroup,
   ({
-    input: { onDragStart, onChange, name, value },
-    onChange: onChangeFromField,
-    defaultValue,
+    input: { onChange, value, ...inputProps },
     meta,
+    onChange: onChangeFromField,
     ...props
   }) => ({
-    // eslint-disable-line no-unused-vars
+    ...inputProps,
     ...props,
-    name,
     value,
     onChange: (event, value) => {
       onChange(value)

@@ -11,8 +11,10 @@
 
 [`redux-form-material-ui`](https://github.com/erikras/redux-form-material-ui) is a set of
 wrappers to facilitate the use of
-[`material-ui`](https://github.com/callemall/material-ui) components with
+[`material-uibeta`](https://github.com/callemall/material-ui) components with
 [`redux-form`](https://github.com/erikras/redux-form).
+
+Latest version is supported by only for material-ui beta.
 
 ---
 
@@ -23,20 +25,26 @@ wrappers to facilitate the use of
 Using [npm](https://www.npmjs.org/):
 
 ```bash
-  $ npm install --save redux-form-material-ui
+  $ npm install --save redux-form-material-ui@next
+```
+
+Using [yarn](https://yarnpkg.com):
+
+```bash
+  $ yarn add redux-form-material-ui@next
 ```
 
 ## Available Components
 
 * [AutoComplete](http://www.material-ui.com/#/components/auto-complete)
 * [Checkbox](http://www.material-ui.com/#/components/checkbox)
-* [TimePicker](http://www.material-ui.com/#/components/time-picker)
-* [DatePicker](http://www.material-ui.com/#/components/date-picker)
+* ~[TimePicker](http://www.material-ui.com/#/components/time-picker)~ [Material-4787](https://github.com/callemall/material-ui/issues/4787)
+* ~[DatePicker](http://www.material-ui.com/#/components/date-picker)~ [Material-4787](https://github.com/callemall/material-ui/issues/4787)
 * [RadioButtonGroup](http://www.material-ui.com/#/components/radio-button)
-* [SelectField](http://www.material-ui.com/#/components/select-field)
-* [Slider](http://www.material-ui.com/#/components/slider)
+* [Select](http://www.material-ui.com/#/components/Select)
+* ~[Slider](http://www.material-ui.com/#/components/slider)~ [Material-4793](https://github.com/callemall/material-ui/issues/4793)
 * [TextField](http://www.material-ui.com/#/components/text-field)
-* [Toggle](http://www.material-ui.com/#/components/toggle)
+* [Switch](https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls)
 
 ## Usage
 
@@ -45,39 +53,37 @@ and then pass the component class directly to the `component` prop of `Field`.
 
 ```js
 import { reduxForm, Field } from 'redux-form'
-import MenuItem from 'material-ui/MenuItem'
-import { RadioButton } from 'material-ui/RadioButton'
+import MenuItem from '@material-ui/core/MenuItem'
+import Radio from '@material-ui/core/RadioButton'
 import {
   Checkbox,
-  RadioButtonGroup,
-  SelectField,
+  RadioGroup,
+  Select,
   TextField,
-  Toggle,
-  DatePicker
+  Switch,
+  FormControlLabel,
 } from 'redux-form-material-ui'
 
 class MyForm extends Component {
   render() {
     return (
       <form>
-        <Field name="username" component={TextField} hintText="Street"/>
+        <Field name="username" component={TextField} placeholder="Street"/>
 
-        <Field name="plan" component={SelectField} hintText="Select a plan">
-          <MenuItem value="monthly" primaryText="Monthly"/>
-          <MenuItem value="yearly" primaryText="Yearly"/>
-          <MenuItem value="lifetime" primaryText="Lifetime"/>
+        <Field name="plan" component={Select} placeholder="Select a plan">
+          <MenuItem value="monthly">Monthly</MenuItem>
+          <MenuItem value="yearly">Yearly</MenuItem>
+          <MenuItem value="lifetime">Lifetime</MenuItem>
         </Field>
 
-        <Field name="agreeToTerms" component={Checkbox} label="Agree to terms?"/>
+        <FormControlLabel control={<Field name="agreeToTerms" component={Checkbox} /> } label="Agree to terms?" />
 
-        <Field name="eventDate" component={DatePicker} format={null} hintText="What day is the event?"/>
+      <FormControlLabel control={<Field name="receiveEmails" component={Switch} /> } label="Please spam me!" />
 
-        <Field name="receiveEmails" component={Toggle} label="Please spam me!"/>
-
-        <Field name="bestFramework" component={RadioButtonGroup}>
-          <RadioButton value="react" label="React"/>
-          <RadioButton value="angular" label="Angular"/>
-          <RadioButton value="ember" label="Ember"/>
+        <Field name="bestFramework" component={RadioGroup}>
+          <Radio value="react" label="React"/>
+          <Radio value="angular" label="Angular"/>
+          <Radio value="ember" label="Ember"/>
         </Field>
       </form>
     )
