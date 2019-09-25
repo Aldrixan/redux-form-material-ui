@@ -1,10 +1,10 @@
+import React from 'react'
+import ReduxFormMaterialUISwitch from '../src/Switch'
+import Switch from '@material-ui/core/Switch'
+import TestUtils from 'react-dom/test-utils'
 import expect from 'expect'
 import expectJsx from 'expect-jsx'
 import noop from 'lodash.noop'
-import Switch from '@material-ui/core/Switch'
-import React from 'react'
-import TestUtils from 'react-dom/test-utils'
-import ReduxFormMaterialUISwitch from '../Switch'
 
 expect.extend(expectJsx)
 

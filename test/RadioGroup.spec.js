@@ -1,10 +1,10 @@
-import expect from 'expect'
-import expectJsx from 'expect-jsx'
 import RadioGroup from '@material-ui/core/RadioGroup'
 import React from 'react'
-import noop from 'lodash.noop'
+import ReduxFormMaterialUIRadioGroup from '../src/RadioGroup'
 import TestUtils from 'react-dom/test-utils'
-import ReduxFormMaterialUIRadioGroup from '../RadioGroup'
+import expect from 'expect'
+import expectJsx from 'expect-jsx'
+import noop from 'lodash.noop'
 
 expect.extend(expectJsx)
 

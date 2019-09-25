@@ -1,5 +1,5 @@
 import expect from 'expect'
-import mapError from '../mapError'
+import mapError from '../src/mapError'
 
 describe('mapError', () => {
   it('returns error if touched', () => {
