@@ -16,7 +16,7 @@
     "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/redux-form-material-ui.min.js",
     "clean": "rimraf dist lib",
     "lint": "eslint src",
-    "prepublish": "npm run test && npm run lint && npm run clean && npm run build",
+    "pre-publish": "npm run test && npm run lint && npm run clean && npm run build",
     "test": "mocha --compilers js:babel-register --recursive --recursive \"src/**/__tests__/*\" --require src/__tests__/setup.js",
     "test:watch": "npm test -- --watch",
     "test:cov": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
@@ -29,12 +29,12 @@
     "redux-form-material-ui",
     "adapter"
   ],
-  "author": "Erik Rasmussen <rasmussenerik@gmail.com> (http://github.com/erikras)",
+  "author": "Matthew Watts <wattsm2008@gmail.com> (http://github.com/Aldrixan)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erikras/redux-form-material-ui/issues"
+    "url": "https://github.com/Aldrixan/redux-form-material-ui/issues"
   },
-  "homepage": "https://github.com/erikras/redux-form-material-ui",
+  "homepage": "https://github.com/Aldrixan/redux-form-material-ui",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.26.3",
