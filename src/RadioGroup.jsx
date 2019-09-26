@@ -1,8 +1,7 @@
-import React, { Component } from "react"
-
 import FormControl from "@material-ui/core/FormControl"
 import FormHelperText from "@material-ui/core/FormHelperText"
 import RadioGroup from "@material-ui/core/RadioGroup"
+import React from "react"
 
 export default function ReduxFormMaterialUIRadioGroup({
     input,

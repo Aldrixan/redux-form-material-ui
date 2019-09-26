@@ -1,6 +1,5 @@
-import React, { Component } from "react"
-
 import FormControlLabel from "@material-ui/core/FormControlLabel"
+import React from "react"
 import Switch from "@material-ui/core/Switch"
 
 export default function ReduxFormMaterialUISwitch({

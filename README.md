@@ -3,18 +3,18 @@
 ---
 [![NPM Version](https://img.shields.io/npm/v/redux-form-material-ui.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui)
 [![NPM Downloads](https://img.shields.io/npm/dm/redux-form-material-ui.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui)
-[![Build Status](https://img.shields.io/travis/erikras/redux-form-material-ui/master.svg?style=flat-square)](https://travis-ci.org/erikras/redux-form-material-ui)
-[![codecov.io](https://codecov.io/github/erikras/redux-form-material-ui/coverage.svg?branch=master)](https://codecov.io/github/erikras/redux-form-material-ui?branch=master)
+[![Build Status](https://img.shields.io/travis/Aldrixan/redux-form-material-ui/master.svg?style=flat-square)](https://travis-ci.org/erikras/redux-form-material-ui)
+[![codecov](https://codecov.io/gh/Aldrixan/redux-form-material-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/Aldrixan/redux-form-material-ui)
 [![CDNJS version](https://img.shields.io/cdnjs/v/redux-form-material-ui.svg)](https://cdnjs.com/libraries/redux-form-material-ui)
 
-### For [`material-ui`](https://github.com/callemall/material-ui) v1-beta support see [5.0](https://github.com/erikras/redux-form-material-ui/tree/5.0) Documentation.
+### For [`material-ui`](https://github.com/callemall/material-ui) 1.0 - 3.0 support see [5.0](https://github.com/Aldrixan/redux-form-material-ui/tree/5.0) Documentation.
 
-[`redux-form-material-ui`](https://github.com/erikras/redux-form-material-ui) is a set of
+[`redux-form-material-ui`](https://github.com/Aldrixan/redux-form-material-ui) is a set of
 wrappers to facilitate the use of
 [`material-uibeta`](https://github.com/callemall/material-ui) components with
 [`redux-form`](https://github.com/erikras/redux-form).
 
-Latest version is supported by only for material-ui beta.
+Latest version is supported only for material-ui 0.x.x.
 
 ---
 
@@ -36,15 +36,11 @@ Using [yarn](https://yarnpkg.com):
 
 ## Available Components
 
-* [AutoComplete](http://www.material-ui.com/#/components/auto-complete)
-* [Checkbox](http://www.material-ui.com/#/components/checkbox)
-* ~[TimePicker](http://www.material-ui.com/#/components/time-picker)~ [Material-4787](https://github.com/callemall/material-ui/issues/4787)
-* ~[DatePicker](http://www.material-ui.com/#/components/date-picker)~ [Material-4787](https://github.com/callemall/material-ui/issues/4787)
-* [RadioButtonGroup](http://www.material-ui.com/#/components/radio-button)
-* [Select](http://www.material-ui.com/#/components/Select)
-* ~[Slider](http://www.material-ui.com/#/components/slider)~ [Material-4793](https://github.com/callemall/material-ui/issues/4793)
-* [TextField](http://www.material-ui.com/#/components/text-field)
-* [Switch](https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls)
+* [Checkbox](https://material-ui.com/api/checkbox/)
+* [RadioGroup](https://material-ui.com/api/radio-group/)
+* [Select](https://material-ui.com/api/select/)
+* [TextField](https://material-ui.com/api/text-field/)
+* [Switch](https://material-ui.com/api/switch/)
 
 ## Usage
 
@@ -105,34 +101,3 @@ some of the Material UI functionality related to defaulting of values has been d
 e.g. `defaultValue`, `defaultDate`, `defaultTime`, `defaultToggled`, `defaultChecked`, etc.
 If you need a field to be initialized to a certain state, you should use the `initialValues`
 API of `redux-form`.
-
-## Instance API
-
-#### `getRenderedComponent()`
-
-Returns a reference to the Material UI component that has been rendered. This is useful for
-calling instance methods on the Material UI components. For example, if you wanted to focus on
-the `username` element when your form mounts, you could do:
-
-```js
-componentWillMount() {
-  this.refs.firstField      // the Field
-    .getRenderedComponent() // on Field, returns ReduxFormMaterialUITextField
-    .getRenderedComponent() // on ReduxFormMaterialUITextField, returns TextField
-    .focus()                // on TextField
-}
-```
-
-as long as you specified a `ref` and `withRef` on your `Field` component.
-
-```js
-render() {
-  return (
-    <form>
-      ...
-      <Field name="username" component={TextField} withRef ref="firstField"/>
-      ...
-    </form>
-  )
-}
-```

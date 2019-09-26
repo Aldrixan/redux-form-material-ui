@@ -7,7 +7,7 @@ exports[`Select renders a Select 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-underline-26"
@@ -36,7 +36,6 @@ exports[`Select renders a Select 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo"
       />
@@ -65,7 +64,7 @@ exports[`Select renders a Select with a warning 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-underline-26"
@@ -94,7 +93,6 @@ exports[`Select renders a Select with a warning 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo"
       />
@@ -125,7 +123,7 @@ exports[`Select renders a Select with an error 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-error-13 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-error-27 MuiInput-formControl-23 MuiInput-underline-26"
@@ -154,7 +152,6 @@ exports[`Select renders a Select with an error 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo"
       />
@@ -185,7 +182,7 @@ exports[`Select renders a Select with multiple 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-underline-26"
@@ -214,7 +211,6 @@ exports[`Select renders a Select with multiple 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo,Bar"
       />
@@ -243,7 +239,7 @@ exports[`Select renders a Select with no error when not touched 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-underline-26"
@@ -272,7 +268,6 @@ exports[`Select renders a Select with no error when not touched 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo"
       />
@@ -301,7 +296,7 @@ exports[`Select renders a Select with no warning when not touched 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-underline-26"
@@ -330,7 +325,6 @@ exports[`Select renders a Select with no warning when not touched 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo"
       />
@@ -359,7 +353,7 @@ exports[`Select should ignore defaultValue 1`] = `
   <label
     className="MuiFormLabel-root-10 MuiFormLabel-filled-14 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9 MuiInputLabel-shrink-8"
     data-shrink={true}
-    htmlFor="nodejs"
+    htmlFor="myText"
   />
   <div
     className="MuiInput-root-22 MuiInput-formControl-23 MuiInput-underline-26"
@@ -388,7 +382,6 @@ exports[`Select should ignore defaultValue 1`] = `
         />
       </div>
       <input
-        name="myText"
         type="hidden"
         value="Foo"
       />
