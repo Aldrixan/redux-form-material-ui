@@ -33,17 +33,4 @@ describe("Switch", () => {
         let tree = component.toJSON()
         expect(tree).toMatchSnapshot()
     })
-
-    //   it('provides getRenderedComponent', () => {
-    //     const dom = TestUtils.renderIntoDocument(
-    //       <ReduxFormMaterialUISwitch input={{ name: 'mySwitch', onChange: noop }} />
-    //     )
-
-    //     const element = TestUtils.findRenderedComponentWithType(
-    //       dom,
-    //       ReduxFormMaterialUISwitch
-    //     )
-    //     expect(element.getRenderedComponent).toBeA('function')
-    //     expect(element.getRenderedComponent()).toExist()
-    //   })
 })

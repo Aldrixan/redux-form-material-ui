@@ -103,7 +103,6 @@ exports[`Checkbox renders an unchecked Checkbox 1`] = `
 exports[`Checkbox should ignore defaultChecked 1`] = `
 <label
   className="MuiFormControlLabel-root-1"
-  defaultChecked={true}
 >
   <span
     className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9"

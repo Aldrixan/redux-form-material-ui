@@ -5,23 +5,12 @@ import Switch from "@material-ui/core/Switch"
 
 export default function ReduxFormMaterialUISwitch({
     input: { value, onChange, ...inputProps },
-    meta,
-    onCheck,
+    defaultChecked,
     ...props
 }) {
     return (
         <FormControlLabel
-            control={
-                <Switch
-                    checked={value ? true : false}
-                    onCheck={(event, isInputChecked) => {
-                        onChange(isInputChecked)
-                        if (onCheck) {
-                            onCheck(isInputChecked)
-                        }
-                    }}
-                />
-            }
+            control={<Switch checked={value ? true : false} onCheck={onChange} />}
             {...props}
             {...inputProps}
         />

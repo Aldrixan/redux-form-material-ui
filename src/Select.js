@@ -6,30 +6,20 @@ import InputLabel from "@material-ui/core/InputLabel"
 import Select from "@material-ui/core/Select"
 
 export default function ReduxFormMaterialUISelect({
-    input: { value, onChange, onBlur, name, ...inputProps },
+    input,
     meta: { touched, error, warning },
-    onChange: onChangeFromField,
     defaultValue,
+    helperText,
     children,
     ...props
 }) {
     return (
         <FormControl error={touched && !!error}>
             <InputLabel htmlFor={name}>{props.label}</InputLabel>
-            <Select
-                {...inputProps}
-                {...props}
-                value={value}
-                onChange={event => {
-                    onChange(event.target.value)
-                    if (onChangeFromField) {
-                        onChangeFromField(event.target.value)
-                    }
-                }}
-                onBlur={() => onBlur(value)}>
+            <Select {...input} {...props}>
                 {children}
             </Select>
-            <FormHelperText>{touched && (error || warning) ? error || warning : props.helperText}</FormHelperText>
+            <FormHelperText>{touched && (error || warning) ? error || warning : helperText}</FormHelperText>
         </FormControl>
     )
 }

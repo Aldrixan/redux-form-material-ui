@@ -5,24 +5,12 @@ import FormControlLabel from "@material-ui/core/FormControlLabel"
 
 export default function ReduxFormMaterialUICheckbox({
     input: { value, onChange, ...inputProps },
-    meta,
-    onCheck,
+    defaultChecked,
     ...props
 }) {
-    const displayName = `ReduxFormMaterialUI${props.name}`
     return (
         <FormControlLabel
-            control={
-                <Checkbox
-                    checked={value ? true : false}
-                    onCheck={(event, isInputChecked) => {
-                        onChange(isInputChecked)
-                        if (onCheck) {
-                            onCheck(isInputChecked)
-                        }
-                    }}
-                />
-            }
+            control={<Checkbox checked={value ? true : false} onCheck={onChange} />}
             {...props}
             {...inputProps}
         />
