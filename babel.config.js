@@ -1,7 +1,7 @@
 module.exports = {
     presets: [
         [
-            "@babel/env",
+            "@babel/preset-env",
             {
                 targets: {
                     browsers: ['defaults']
@@ -9,7 +9,7 @@ module.exports = {
                 useBuiltIns: "usage",
                 "corejs": "3.2.1",
             },
-            "react"
+            "@babel/preset-react"
         ],
     ],
 }

@@ -1,175 +1,62 @@
-import React from 'react'
-import ReduxFormMaterialUISelect from '../src/Select'
-import Select from '@material-ui/core/Select'
-import expect from 'expect'
-import expectJsx from 'expect-jsx'
+import React from "react"
+import ReduxFormMaterialUISelect from "../src/Select"
+import noop from "lodash.noop"
+import renderer from 'react-test-renderer';
 
-expect.extend(expectJsx)
+describe( "Checkbox", () => {
+    it( "renders a Select", () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect input={{ onChange: noop, name: 'myText', value: 'Foo' }} />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
 
-describe('Select', () => {
-  it('has a display name', () => {
-    expect(ReduxFormMaterialUISelect.displayName).toBe(
-      'ReduxFormMaterialUIWithStyles'
-    )
-  })
+    it( 'renders a Select with multiple', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect multiple={true} input={{ onChange: noop, name: 'myText', value: [ 'Foo', 'Bar' ] }} />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
 
-  it('renders a Select', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        input: {
-          name: 'myText',
-          value: 'Foo'
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        name="myText"
-        value="Foo"
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
+    it( 'renders a Select with no error when not touched', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect input={{ onChange: noop, name: 'myText', value: 'Foo' }} meta={{ error: 'FooError' }} />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
 
-  it('renders a Select with multiple', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        multiple: true,
-        input: {
-          name: 'myText',
-          value: ['Foo', 'Bar']
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        multiple
-        name="myText"
-        value={['Foo', 'Bar']}
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
+    it( 'renders a Select with an error', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect input={{ onChange: noop, name: 'myText', value: 'Foo' }} meta={{ error: 'FooError', touched: true }} />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
 
-  it('renders a Select with no error when not touched', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        input: {
-          name: 'myText',
-          value: 'Foo'
-        },
-        meta: {
-          error: 'FooError'
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        name="myText"
-        value="Foo"
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
+    it( 'renders a Select with no warning when not touched', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect input={{ onChange: noop, name: 'myText', value: 'Foo' }} meta={{ warning: 'FooWarning' }} />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
 
-  it('renders a Select with an error', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        input: {
-          name: 'myText',
-          value: 'Foo'
-        },
-        meta: {
-          error: 'FooError',
-          touched: true
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        name="myText"
-        value="Foo"
-        error
-        //helperText="FooError"
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
+    it( 'renders a Select with an warning', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect input={{ onChange: noop, name: 'myText', value: 'Foo' }} meta={{ warning: 'FooWarning', touched: true }} />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
 
-  it('renders a Select with no warning when not touched', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        input: {
-          name: 'myText',
-          value: 'Foo'
-        },
-        meta: {
-          warning: 'FooWarning'
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        name="myText"
-        value="Foo"
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
-
-  it('renders a Select with an warning', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        input: {
-          name: 'myText',
-          value: 'Foo'
-        },
-        meta: {
-          warning: 'FooWarning',
-          touched: true
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        name="myText"
-        value="Foo"
-        error
-        //helperText="FooWarning"
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
-
-  it('should ignore defaultValue', () => {
-    expect(
-      new ReduxFormMaterialUISelect({
-        input: {
-          name: 'myText',
-          value: ''
-        },
-        defaultValue: '5',
-        meta: {
-          warning: 'FooWarning',
-          touched: true
-        }
-      }).render()
-    ).toEqualJSX(
-      <Select
-        name="myText"
-        value=""
-        error
-        //helperText="FooWarning"
-        ref={() => {}}
-        onChange={() => {}}
-        onBlur={() => {}}
-      />
-    )
-  })
-})
+    it( 'should ignore defaultValue', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect input={{ onChange: noop, name: 'myText', value: 'Foo' }} meta={{ error: 'FooError' }} defaultValue='5' />
+        );
+        let tree = component.toJSON();
+        expect( tree ).toMatchSnapshot();
+    } )
+} )
