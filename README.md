@@ -3,8 +3,7 @@
 ---
 [![NPM Version](https://img.shields.io/npm/v/redux-form-material-ui.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui)
 [![NPM Downloads](https://img.shields.io/npm/dm/redux-form-material-ui.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui)
-[![Build Status](https://img.shields.io/travis/Aldrixan/redux-form-material-ui/master.svg?style=flat-square)](https://travis-ci.org/erikras/redux-form-material-ui)
-[![codecov](https://codecov.io/gh/Aldrixan/redux-form-material-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/Aldrixan/redux-form-material-ui)
+[![Build Status](https://img.shields.io/travis/Aldrixan/redux-form-material-ui/master.svg?style=flat-square)](https://travis-ci.org/Aldrixan/redux-form-material-ui)
 [![CDNJS version](https://img.shields.io/cdnjs/v/redux-form-material-ui.svg)](https://cdnjs.com/libraries/redux-form-material-ui)
 
 ### For [`material-ui`](https://github.com/callemall/material-ui) 1.0 - 3.0 support see [5.0](https://github.com/Aldrixan/redux-form-material-ui/tree/5.0) Documentation.
