@@ -1,14 +1,29 @@
-import Switch from '@material-ui/core/Switch'
-import createComponent from './createComponent'
+import React, { Component } from "react"
 
-export default createComponent(Switch, ({
-  input: { onChange, value, ...inputProps },
-  checked,
-  meta,
-  ...props
-}) => ({
-  ...inputProps,
-  ...props,
-  onChange,
-  checked: !!value
-}))
+import FormControlLabel from "@material-ui/core/FormControlLabel"
+import Switch from "@material-ui/core/Switch"
+
+export default function ReduxFormMaterialUISwitch({
+    input: { value, onChange, ...inputProps },
+    meta,
+    onCheck,
+    ...props
+}) {
+    return (
+        <FormControlLabel
+            control={
+                <Switch
+                    checked={value ? true : false}
+                    onCheck={(event, isInputChecked) => {
+                        onChange(isInputChecked)
+                        if (onCheck) {
+                            onCheck(isInputChecked)
+                        }
+                    }}
+                />
+            }
+            {...props}
+            {...inputProps}
+        />
+    )
+}

@@ -5,11 +5,11 @@ exports[`RadioGroup renders a RadioGroup 1`] = `
   className="MuiFormControlLabel-root-1"
 >
   <div
-    className="MuiFormGroup-root-7"
+    className="MuiFormGroup-root-5"
     role="radiogroup"
   />
   <span
-    className="MuiTypography-root-9 MuiTypography-body1-18 MuiFormControlLabel-label-6"
+    className="MuiTypography-root-7 MuiTypography-body1-16 MuiFormControlLabel-label-4"
   />
 </label>
 `;

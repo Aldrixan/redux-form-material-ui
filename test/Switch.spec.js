@@ -1,91 +1,49 @@
-// import React from 'react'
-// import ReduxFormMaterialUISwitch from '../src/Switch'
-// import Switch from '@material-ui/core/Switch'
-// import TestUtils from 'react-dom/test-utils'
-// import expect from 'expect'
-// import expectJsx from 'expect-jsx'
-// import noop from 'lodash.noop'
+import React from "react"
+import ReduxFormMaterialUISwitch from "../src/Switch"
+import noop from "lodash.noop"
+import renderer from "react-test-renderer"
 
-// expect.extend(expectJsx)
+describe("Switch", () => {
+    it("renders an unchecked Switch", () => {
+        const component = renderer.create(<ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} />)
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    })
 
-// describe('Switch', () => {
-//   it('has a display name', () => {
-//     expect(ReduxFormMaterialUISwitch.displayName).toBe(
-//       'ReduxFormMaterialUIWithStyles'
-//     )
-//   })
+    it("renders a checked Switch", () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISwitch input={{ value: true, onChange: noop, name: "mySwitch" }} />
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    })
 
-//   it('renders an unchecked Switch', () => {
-//     expect(
-//       new ReduxFormMaterialUISwitch({
-//         input: {
-//           name: 'mySwitch',
-//           onChange: noop
-//         }
-//       }).render()
-//     ).toEqualJSX(<Switch name="mySwitch" onChange={noop} ref={() => {}} />)
-//   })
+    it("should ignore checked", () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} checked={true} />
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    })
 
-//   it('renders a checked Switch', () => {
-//     expect(
-//       new ReduxFormMaterialUISwitch({
-//         input: {
-//           name: 'mySwitch',
-//           onChange: noop,
-//           value: true
-//         }
-//       }).render()
-//     ).toEqualJSX(
-//       <Switch name="mySwitch" onChange={noop} ref={() => {}} checked />
-//     )
-//   })
+    it("should ignore defaultChecked", () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "myCheckbox" }} defaultChecked={true} />
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+    })
 
-//   it('should ignore checked', () => {
-//     expect(
-//       new ReduxFormMaterialUISwitch({
-//         input: {
-//           name: 'mySwitch',
-//           onChange: noop
-//         },
-//         checked: true
-//       }).render()
-//     ).toEqualJSX(<Switch name="mySwitch" onChange={noop} ref={() => {}} />)
-//   })
+    //   it('provides getRenderedComponent', () => {
+    //     const dom = TestUtils.renderIntoDocument(
+    //       <ReduxFormMaterialUISwitch input={{ name: 'mySwitch', onChange: noop }} />
+    //     )
 
-//   it('renders a controlled Switch', () => {
-//     expect(
-//       new ReduxFormMaterialUISwitch({
-//         input: {
-//           name: 'mySwitch',
-//           onChange: noop,
-//           value: true
-//         }
-//       }).render()
-//     ).toEqualJSX(
-//       <Switch name="mySwitch" onChange={noop} ref={() => {}} checked={true} />
-//     )
-//     expect(
-//       new ReduxFormMaterialUISwitch({
-//         input: {
-//           name: 'mySwitch',
-//           onChange: noop
-//         }
-//       }).render()
-//     ).toEqualJSX(
-//       <Switch name="mySwitch" onChange={noop} ref={() => {}} checked={false} />
-//     )
-//   })
-
-//   it('provides getRenderedComponent', () => {
-//     const dom = TestUtils.renderIntoDocument(
-//       <ReduxFormMaterialUISwitch input={{ name: 'mySwitch', onChange: noop }} />
-//     )
-
-//     const element = TestUtils.findRenderedComponentWithType(
-//       dom,
-//       ReduxFormMaterialUISwitch
-//     )
-//     expect(element.getRenderedComponent).toBeA('function')
-//     expect(element.getRenderedComponent()).toExist()
-//   })
-// })
+    //     const element = TestUtils.findRenderedComponentWithType(
+    //       dom,
+    //       ReduxFormMaterialUISwitch
+    //     )
+    //     expect(element.getRenderedComponent).toBeA('function')
+    //     expect(element.getRenderedComponent()).toExist()
+    //   })
+})

@@ -5,10 +5,9 @@ exports[`Checkbox renders a checked Checkbox 1`] = `
   className="MuiFormControlLabel-root-1"
 >
   <span
-    className="MuiButtonBase-root-23 MuiIconButton-root-17 MuiPrivateSwitchBase-root-13 MuiCheckbox-root-7 MuiCheckbox-colorSecondary-12 MuiPrivateSwitchBase-checked-14 MuiCheckbox-checked-8"
+    className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9 MuiSwitchBase-checked-11 MuiCheckbox-checked-6"
     onBlur={[Function]}
     onCheck={[Function]}
-    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -21,13 +20,12 @@ exports[`Checkbox renders a checked Checkbox 1`] = `
     tabIndex={null}
   >
     <span
-      className="MuiIconButton-label-22"
+      className="MuiIconButton-label-19"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root-26"
+        className="MuiSvgIcon-root-23"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -36,19 +34,18 @@ exports[`Checkbox renders a checked Checkbox 1`] = `
       </svg>
       <input
         checked={true}
-        className="MuiPrivateSwitchBase-input-16"
-        data-indeterminate={false}
+        className="MuiSwitchBase-input-13"
         name="myCheckbox"
         onChange={[Function]}
         type="checkbox"
       />
     </span>
     <span
-      className="MuiTouchRipple-root-71"
+      className="MuiTouchRipple-root-30"
     />
   </span>
   <span
-    className="MuiTypography-root-35 MuiTypography-body1-44 MuiFormControlLabel-label-6"
+    className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-4"
   />
 </label>
 `;
@@ -58,10 +55,9 @@ exports[`Checkbox renders an unchecked Checkbox 1`] = `
   className="MuiFormControlLabel-root-1"
 >
   <span
-    className="MuiButtonBase-root-23 MuiIconButton-root-17 MuiPrivateSwitchBase-root-13 MuiCheckbox-root-7 MuiCheckbox-colorSecondary-12"
+    className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9"
     onBlur={[Function]}
     onCheck={[Function]}
-    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -74,13 +70,12 @@ exports[`Checkbox renders an unchecked Checkbox 1`] = `
     tabIndex={null}
   >
     <span
-      className="MuiIconButton-label-22"
+      className="MuiIconButton-label-19"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root-26"
+        className="MuiSvgIcon-root-23"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -89,19 +84,18 @@ exports[`Checkbox renders an unchecked Checkbox 1`] = `
       </svg>
       <input
         checked={false}
-        className="MuiPrivateSwitchBase-input-16"
-        data-indeterminate={false}
+        className="MuiSwitchBase-input-13"
         name="myCheckbox"
         onChange={[Function]}
         type="checkbox"
       />
     </span>
     <span
-      className="MuiTouchRipple-root-71"
+      className="MuiTouchRipple-root-30"
     />
   </span>
   <span
-    className="MuiTypography-root-35 MuiTypography-body1-44 MuiFormControlLabel-label-6"
+    className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-4"
   />
 </label>
 `;
@@ -112,10 +106,9 @@ exports[`Checkbox should ignore defaultChecked 1`] = `
   defaultChecked={true}
 >
   <span
-    className="MuiButtonBase-root-23 MuiIconButton-root-17 MuiPrivateSwitchBase-root-13 MuiCheckbox-root-7 MuiCheckbox-colorSecondary-12"
+    className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9"
     onBlur={[Function]}
     onCheck={[Function]}
-    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -128,13 +121,12 @@ exports[`Checkbox should ignore defaultChecked 1`] = `
     tabIndex={null}
   >
     <span
-      className="MuiIconButton-label-22"
+      className="MuiIconButton-label-19"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root-26"
+        className="MuiSvgIcon-root-23"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -143,19 +135,18 @@ exports[`Checkbox should ignore defaultChecked 1`] = `
       </svg>
       <input
         checked={false}
-        className="MuiPrivateSwitchBase-input-16"
-        data-indeterminate={false}
+        className="MuiSwitchBase-input-13"
         name="myCheckbox"
         onChange={[Function]}
         type="checkbox"
       />
     </span>
     <span
-      className="MuiTouchRipple-root-71"
+      className="MuiTouchRipple-root-30"
     />
   </span>
   <span
-    className="MuiTypography-root-35 MuiTypography-body1-44 MuiFormControlLabel-label-6"
+    className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-4"
   />
 </label>
 `;
