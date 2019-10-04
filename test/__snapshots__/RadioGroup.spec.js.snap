@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup renders a RadioGroup 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <div
+    className="MuiFormGroup-root-5"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root-7"
+  />
+</div>
+`;
+
+exports[`RadioGroup renders a RadioGroup with a warning when touched 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <div
+    className="MuiFormGroup-root-5"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root-7"
+  >
+    FooWarning
+  </p>
+</div>
+`;
+
+exports[`RadioGroup renders a RadioGroup with an error when touched 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <div
+    className="MuiFormGroup-root-5"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root-7 MuiFormHelperText-error-8"
+  >
+    FooError
+  </p>
+</div>
+`;
+
+exports[`RadioGroup renders a RadioGroup with no error when not touched 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <div
+    className="MuiFormGroup-root-5"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root-7"
+  />
+</div>
+`;
+
+exports[`RadioGroup renders a RadioGroup with no warning when not touched 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <div
+    className="MuiFormGroup-root-5"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root-7"
+  />
+</div>
+`;
+
+exports[`RadioGroup should ignore defaultValue 1`] = `
+<div
+  className="MuiFormControl-root-1"
+>
+  <div
+    className="MuiFormGroup-root-5"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root-7"
+  >
+    FooWarning
+  </p>
+</div>
+`;

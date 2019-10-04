@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders a checked Checkbox 1`] = `
+<label
+  className="MuiFormControlLabel-root-1"
+>
+  <span
+    className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9 MuiSwitchBase-checked-11 MuiCheckbox-checked-6"
+    onBlur={[Function]}
+    onCheck={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label-19"
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-23"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+        />
+      </svg>
+      <input
+        checked={true}
+        className="MuiSwitchBase-input-13"
+        name="myCheckbox"
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </span>
+    <span
+      className="MuiTouchRipple-root-30"
+    />
+  </span>
+  <span
+    className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-4"
+  />
+</label>
+`;
+
+exports[`Checkbox renders an unchecked Checkbox 1`] = `
+<label
+  className="MuiFormControlLabel-root-1"
+>
+  <span
+    className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9"
+    onBlur={[Function]}
+    onCheck={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label-19"
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-23"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      <input
+        checked={false}
+        className="MuiSwitchBase-input-13"
+        name="myCheckbox"
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </span>
+    <span
+      className="MuiTouchRipple-root-30"
+    />
+  </span>
+  <span
+    className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-4"
+  />
+</label>
+`;
+
+exports[`Checkbox should ignore defaultChecked 1`] = `
+<label
+  className="MuiFormControlLabel-root-1"
+>
+  <span
+    className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiSwitchBase-root-10 MuiCheckbox-root-5 MuiCheckbox-colorSecondary-9"
+    onBlur={[Function]}
+    onCheck={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label-19"
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-23"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      <input
+        checked={false}
+        className="MuiSwitchBase-input-13"
+        name="myCheckbox"
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </span>
+    <span
+      className="MuiTouchRipple-root-30"
+    />
+  </span>
+  <span
+    className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-4"
+  />
+</label>
+`;
