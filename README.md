@@ -1,44 +1,9 @@
-<!-- <h1 align="center">
-  <br>
-  <a href="https://github.com/ArmynC/ArminC-AutoExec/archive/master.zip"><img src="https://arminc.ga/resources/autoexec/arminc_autoexec.png" alt="ArminC AutoExec"></a>
-</h1>
-
-<h4 align="center">A high-quality CS:GO config built for gamers.</h4>
-
-<p align="center">
-    <a href="https://github.com/ArmynC/ArminC-AutoExec/commits/master">
-    <img src="https://img.shields.io/github/last-commit/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub last commit">
-    <a href="https://github.com/ArmynC/ArminC-AutoExec/issues">
-    <img src="https://img.shields.io/github/issues-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub issues">
-    <a href="https://github.com/ArmynC/ArminC-AutoExec/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub pull requests">
-    <a href="https://twitter.com/intent/tweet?text=Try this CS:GO AutoExec:&url=https%3A%2F%2Fgithub.com%2FArmynC%2FArminC-AutoExec">
-    <img src="https://img.shields.io/twitter/url/https/github.com/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=twitter"
-         alt="GitHub tweet">
-</p>
-
-<p align="center">
-  <a href="#about">About</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#updating">Updating</a> •
-  <a href="#features">Features</a> •
-  <a href="#binds">Binds</a> •
-  <a href="#wiki">Wiki</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#author">Author</a> •
-  <a href="#support">Support</a> •
-  <a href="#donate">Donate</a> •
-  <a href="#license">License</a>
-</p> -->
 ---
 # redux-form-material-ui
 ---
 [`redux-form-material-ui-adapter`](https://github.com/Aldrixan/redux-form-material-ui) is a set of wrappers to facilitate the use of [`material-ui`](https://github.com/callemall/material-ui) components with [`redux-form`](https://github.com/erikras/redux-form).  This library was forked from the original [`redux-form-material-ui`](https://github.com/erikras/redux-form-material-ui) and updated to use the latest versions of all dependencies
 
-Latest version supports material-ui up to version 4.x.x
+**Latest version supports material-ui up to version 4.x.x**
 
 ---
 ## [Live Demo](http://erikras.github.io/redux-form-material-ui/) :eyes:
