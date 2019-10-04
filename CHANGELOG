@@ -1,0 +1,4 @@
+6.0.0
+    - Upgraded all dependencies
+    - Switched test suite to jest
+    - Added compatibility with Material-UI v4.x
