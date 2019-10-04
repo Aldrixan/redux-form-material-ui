@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erikras/redux-form-material-ui"
+    "url": "https://github.com/Aldrixan/redux-form-material-ui"
   },
   "scripts": {
     "build": "npx babel src --out-dir lib --ignore '**/*.spec.js'",
@@ -83,7 +83,7 @@
     "sourceMap": false,
     "instrument": false
   },
-  "npmName": "redux-form-material-ui",
+  "npmName": "redux-form-material-ui-adapter",
   "npmFileMap": [
     {
       "basePath": "/dist/",
