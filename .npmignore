@@ -1,2 +1,12 @@
 src
-examples
+example
+.github
+coverage
+test
+.eslintignore
+.eslintrc
+.travis.yml
+CONTRIBUTING.md
+jest.config.js
+.idea
+.nyc_output
