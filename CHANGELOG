@@ -1,3 +1,7 @@
+6.1.0
+    - Fixed placement of classname attribute on select component
+    - Adjusted FormHelperText element to only exist if there is text to display
+    
 6.0.0
     - Upgraded all dependencies
     - Switched test suite to jest

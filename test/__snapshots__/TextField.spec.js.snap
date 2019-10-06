@@ -2,16 +2,18 @@
 
 exports[`TextField renders a TextField 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root MuiTextField-root"
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-underline-9"
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      className="MuiInput-input-13"
+      className="MuiInputBase-input MuiInput-input"
       disabled={false}
       name="myText"
+      onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -25,16 +27,18 @@ exports[`TextField renders a TextField 1`] = `
 
 exports[`TextField renders a TextField with an error 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root MuiTextField-root"
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-underline-9"
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      className="MuiInput-input-13"
+      className="MuiInputBase-input MuiInput-input"
       disabled={false}
       name="myText"
+      onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -44,7 +48,7 @@ exports[`TextField renders a TextField with an error 1`] = `
     />
   </div>
   <p
-    className="MuiFormHelperText-root-18 MuiFormHelperText-filled-23"
+    className="MuiFormHelperText-root MuiFormHelperText-filled"
   >
     FooError
   </p>
@@ -53,16 +57,18 @@ exports[`TextField renders a TextField with an error 1`] = `
 
 exports[`TextField renders a TextField with an warning 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root MuiTextField-root"
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-underline-9"
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      className="MuiInput-input-13"
+      className="MuiInputBase-input MuiInput-input"
       disabled={false}
       name="myText"
+      onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -72,7 +78,7 @@ exports[`TextField renders a TextField with an warning 1`] = `
     />
   </div>
   <p
-    className="MuiFormHelperText-root-18 MuiFormHelperText-filled-23"
+    className="MuiFormHelperText-root MuiFormHelperText-filled"
   >
     FooWarning
   </p>
@@ -81,16 +87,18 @@ exports[`TextField renders a TextField with an warning 1`] = `
 
 exports[`TextField renders a TextField with no error when not touched 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root MuiTextField-root"
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-underline-9"
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      className="MuiInput-input-13"
+      className="MuiInputBase-input MuiInput-input"
       disabled={false}
       name="myText"
+      onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -104,16 +112,18 @@ exports[`TextField renders a TextField with no error when not touched 1`] = `
 
 exports[`TextField renders a TextField with no warning when not touched 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root MuiTextField-root"
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-underline-9"
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      className="MuiInput-input-13"
+      className="MuiInputBase-input MuiInput-input"
       disabled={false}
       name="myText"
+      onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -127,16 +137,18 @@ exports[`TextField renders a TextField with no warning when not touched 1`] = `
 
 exports[`TextField should ignore defaultValue 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root MuiTextField-root"
 >
   <div
-    className="MuiInput-root-5 MuiInput-formControl-6 MuiInput-underline-9"
+    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      className="MuiInput-input-13"
+      className="MuiInputBase-input MuiInput-input"
       disabled={false}
       name="myText"
+      onAnimationStart={[Function]}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -146,7 +158,7 @@ exports[`TextField should ignore defaultValue 1`] = `
     />
   </div>
   <p
-    className="MuiFormHelperText-root-18 MuiFormHelperText-filled-23"
+    className="MuiFormHelperText-root"
   >
     FooWarning
   </p>
