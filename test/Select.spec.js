@@ -12,6 +12,17 @@ describe( "Select", () => {
         expect( tree ).toMatchSnapshot()
     } )
 
+    it( "renders a Select with className", () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect
+                input={{ onChange: noop, name: "myText", value: "Foo" }}
+                meta={{}}
+                className='myClassName' />
+        )
+        let tree = component.toJSON()
+        expect( tree ).toMatchSnapshot()
+    } )
+
     it( "renders a Select with multiple", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect

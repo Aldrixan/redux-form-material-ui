@@ -10,10 +10,11 @@ export default function ReduxFormMaterialUISelect({
     defaultValue,
     helperText,
     children,
+    className,
     ...props
 }) {
     return (
-        <FormControl error={touched && !!error}>
+        <FormControl error={touched && !!error} className={className}>
             <InputLabel htmlFor={name}>{props.label}</InputLabel>
             <Select {...input} {...props}>
                 {children}
