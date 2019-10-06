@@ -1,21 +1,23 @@
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
-import RadioGroup from '@material-ui/core/RadioGroup';
+import InputLabel from '@material-ui/core/InputLabel';
 import React from 'react';
+import Select from '@material-ui/core/Select';
 
-export default function ReduxFormMaterialUIRadioGroup({
-    input,
+export default function ReduxFormMaterialUISelect({
+    input: { name, ...input },
     meta: { touched, error, warning },
     defaultValue,
-    children,
     helperText,
-    ...rest
+    children,
+    ...props
 }) {
     return (
         <FormControl error={touched && !!error}>
-            <RadioGroup {...input} {...rest}>
+            <InputLabel htmlFor={name}>{props.label}</InputLabel>
+            <Select {...input} {...props}>
                 {children}
-            </RadioGroup>
+            </Select>
             {(touched && (error || warning)) || helperText ? (
                 <FormHelperText>
                     {touched && (error || warning)

@@ -3,28 +3,52 @@ import ReduxFormMaterialUISelect from "../src/Select"
 import noop from "lodash.noop"
 import renderer from "react-test-renderer"
 
-describe("Select", () => {
-    it("renders a Select", () => {
+describe( "Select", () => {
+    it( "renders a Select", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{}} />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+        expect( tree ).toMatchSnapshot()
+    } )
 
-    it("renders a Select with multiple", () => {
+    it( "renders a Select with multiple", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect
                 multiple={true}
-                input={{ onChange: noop, name: "myText", value: ["Foo", "Bar"] }}
+                input={{ onChange: noop, name: "myText", value: [ "Foo", "Bar" ] }}
                 meta={{}}
             />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+        expect( tree ).toMatchSnapshot()
+    } )
 
-    it("renders a Select with no error when not touched", () => {
+    it( 'renders a Select with helper text when not touched', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect
+                input={{ onChange: noop, name: 'myText', value: 'Foo' }}
+                meta={{ error: 'FooError' }}
+                helperText='My Helper Text'
+            />
+        )
+        let tree = component.toJSON()
+        expect( tree ).toMatchSnapshot()
+    } )
+
+    it( 'renders a Select with error when touched and helper text', () => {
+        const component = renderer.create(
+            <ReduxFormMaterialUISelect
+                input={{ onChange: noop, name: 'myText', value: 'Foo' }}
+                meta={{ error: 'FooError', touched: true }}
+                helperText='My Helper Text'
+            />
+        )
+        let tree = component.toJSON()
+        expect( tree ).toMatchSnapshot()
+    } )
+
+    it( "renders a Select with no error when not touched", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect
                 input={{ onChange: noop, name: "myText", value: "Foo" }}
@@ -32,10 +56,10 @@ describe("Select", () => {
             />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+        expect( tree ).toMatchSnapshot()
+    } )
 
-    it("renders a Select with an error", () => {
+    it( "renders a Select with an error", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect
                 input={{ onChange: noop, name: "myText", value: "Foo" }}
@@ -43,10 +67,10 @@ describe("Select", () => {
             />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+        expect( tree ).toMatchSnapshot()
+    } )
 
-    it("renders a Select with no warning when not touched", () => {
+    it( "renders a Select with no warning when not touched", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect
                 input={{ onChange: noop, name: "myText", value: "Foo" }}
@@ -54,10 +78,10 @@ describe("Select", () => {
             />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+        expect( tree ).toMatchSnapshot()
+    } )
 
-    it("renders a Select with a warning", () => {
+    it( "renders a Select with a warning", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect
                 input={{ onChange: noop, name: "myText", value: "Foo" }}
@@ -65,10 +89,10 @@ describe("Select", () => {
             />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+        expect( tree ).toMatchSnapshot()
+    } )
 
-    it("should ignore defaultValue", () => {
+    it( "should ignore defaultValue", () => {
         const component = renderer.create(
             <ReduxFormMaterialUISelect
                 input={{ onChange: noop, name: "myText", value: "Foo" }}
@@ -77,6 +101,6 @@ describe("Select", () => {
             />
         )
         let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
-})
+        expect( tree ).toMatchSnapshot()
+    } )
+} )
