@@ -2,28 +2,25 @@
 
 exports[`RadioGroup renders a RadioGroup 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root"
 >
   <div
-    className="MuiFormGroup-root-5"
+    className="MuiFormGroup-root"
     role="radiogroup"
-  />
-  <p
-    className="MuiFormHelperText-root-7"
   />
 </div>
 `;
 
 exports[`RadioGroup renders a RadioGroup with a warning when touched 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root"
 >
   <div
-    className="MuiFormGroup-root-5"
+    className="MuiFormGroup-root"
     role="radiogroup"
   />
   <p
-    className="MuiFormHelperText-root-7"
+    className="MuiFormHelperText-root"
   >
     FooWarning
   </p>
@@ -32,58 +29,84 @@ exports[`RadioGroup renders a RadioGroup with a warning when touched 1`] = `
 
 exports[`RadioGroup renders a RadioGroup with an error when touched 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root"
 >
   <div
-    className="MuiFormGroup-root-5"
+    className="MuiFormGroup-root"
     role="radiogroup"
   />
   <p
-    className="MuiFormHelperText-root-7 MuiFormHelperText-error-8"
+    className="MuiFormHelperText-root Mui-error"
   >
     FooError
   </p>
 </div>
 `;
 
-exports[`RadioGroup renders a RadioGroup with no error when not touched 1`] = `
+exports[`RadioGroup renders a RadioGroup with error when touched and helper text 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root"
 >
   <div
-    className="MuiFormGroup-root-5"
+    className="MuiFormGroup-root"
     role="radiogroup"
   />
   <p
-    className="MuiFormHelperText-root-7"
+    className="MuiFormHelperText-root Mui-error"
+  >
+    FooError
+  </p>
+</div>
+`;
+
+exports[`RadioGroup renders a RadioGroup with helper text when not touched 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiFormGroup-root"
+    role="radiogroup"
+  />
+  <p
+    className="MuiFormHelperText-root"
+  >
+    My Helper Text
+  </p>
+</div>
+`;
+
+exports[`RadioGroup renders a RadioGroup with no error when not touched 1`] = `
+<div
+  className="MuiFormControl-root"
+>
+  <div
+    className="MuiFormGroup-root"
+    role="radiogroup"
   />
 </div>
 `;
 
 exports[`RadioGroup renders a RadioGroup with no warning when not touched 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root"
 >
   <div
-    className="MuiFormGroup-root-5"
+    className="MuiFormGroup-root"
     role="radiogroup"
-  />
-  <p
-    className="MuiFormHelperText-root-7"
   />
 </div>
 `;
 
 exports[`RadioGroup should ignore defaultValue 1`] = `
 <div
-  className="MuiFormControl-root-1"
+  className="MuiFormControl-root"
 >
   <div
-    className="MuiFormGroup-root-5"
+    className="MuiFormGroup-root"
     role="radiogroup"
   />
   <p
-    className="MuiFormHelperText-root-7"
+    className="MuiFormHelperText-root"
   >
     FooWarning
   </p>

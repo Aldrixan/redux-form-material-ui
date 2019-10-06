@@ -2,15 +2,17 @@
 
 exports[`Switch renders a checked Switch 1`] = `
 <label
-  className="MuiFormControlLabel-root-1"
+  className="MuiFormControlLabel-root"
 >
   <span
-    className="MuiSwitch-root-5"
+    className="MuiSwitch-root"
   >
     <span
-      className="MuiButtonBase-root-24 MuiIconButton-root-18 MuiSwitchBase-root-14 MuiSwitch-switchBase-8 MuiSwitch-colorSecondary-11 MuiSwitchBase-checked-15 MuiSwitch-checked-9"
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-20 Mui-checked"
       onBlur={[Function]}
       onCheck={[Function]}
+      onDragLeave={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -23,44 +25,46 @@ exports[`Switch renders a checked Switch 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-23"
+        className="MuiIconButton-label"
       >
-        <span
-          className="MuiSwitch-icon-6 MuiSwitch-iconChecked-7"
-        />
         <input
           checked={true}
-          className="MuiSwitchBase-input-17"
+          className="PrivateSwitchBase-input-22 MuiSwitch-input"
           name="mySwitch"
           onChange={[Function]}
           type="checkbox"
         />
+        <span
+          className="MuiSwitch-thumb"
+        />
       </span>
       <span
-        className="MuiTouchRipple-root-27"
+        className="MuiTouchRipple-root"
       />
     </span>
     <span
-      className="MuiSwitch-bar-13"
+      className="MuiSwitch-track"
     />
   </span>
   <span
-    className="MuiTypography-root-34 MuiTypography-body1-43 MuiFormControlLabel-label-4"
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
   />
 </label>
 `;
 
 exports[`Switch renders an unchecked Switch 1`] = `
 <label
-  className="MuiFormControlLabel-root-1"
+  className="MuiFormControlLabel-root"
 >
   <span
-    className="MuiSwitch-root-5"
+    className="MuiSwitch-root"
   >
     <span
-      className="MuiButtonBase-root-24 MuiIconButton-root-18 MuiSwitchBase-root-14 MuiSwitch-switchBase-8 MuiSwitch-colorSecondary-11"
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiSwitch-switchBase MuiSwitch-colorSecondary"
       onBlur={[Function]}
       onCheck={[Function]}
+      onDragLeave={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -73,44 +77,43 @@ exports[`Switch renders an unchecked Switch 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-23"
+        className="MuiIconButton-label"
       >
-        <span
-          className="MuiSwitch-icon-6"
-        />
         <input
           checked={false}
-          className="MuiSwitchBase-input-17"
+          className="PrivateSwitchBase-input-22 MuiSwitch-input"
           name="mySwitch"
           onChange={[Function]}
           type="checkbox"
         />
+        <span
+          className="MuiSwitch-thumb"
+        />
       </span>
-      <span
-        className="MuiTouchRipple-root-27"
-      />
     </span>
     <span
-      className="MuiSwitch-bar-13"
+      className="MuiSwitch-track"
     />
   </span>
   <span
-    className="MuiTypography-root-34 MuiTypography-body1-43 MuiFormControlLabel-label-4"
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
   />
 </label>
 `;
 
 exports[`Switch should ignore checked 1`] = `
 <label
-  className="MuiFormControlLabel-root-1"
+  className="MuiFormControlLabel-root"
 >
   <span
-    className="MuiSwitch-root-5"
+    className="MuiSwitch-root"
   >
     <span
-      className="MuiButtonBase-root-24 MuiIconButton-root-18 MuiSwitchBase-root-14 MuiSwitch-switchBase-8 MuiSwitch-colorSecondary-11"
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiSwitch-switchBase MuiSwitch-colorSecondary"
       onBlur={[Function]}
       onCheck={[Function]}
+      onDragLeave={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -123,44 +126,43 @@ exports[`Switch should ignore checked 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-23"
+        className="MuiIconButton-label"
       >
-        <span
-          className="MuiSwitch-icon-6"
-        />
         <input
           checked={false}
-          className="MuiSwitchBase-input-17"
+          className="PrivateSwitchBase-input-22 MuiSwitch-input"
           name="mySwitch"
           onChange={[Function]}
           type="checkbox"
         />
+        <span
+          className="MuiSwitch-thumb"
+        />
       </span>
-      <span
-        className="MuiTouchRipple-root-27"
-      />
     </span>
     <span
-      className="MuiSwitch-bar-13"
+      className="MuiSwitch-track"
     />
   </span>
   <span
-    className="MuiTypography-root-34 MuiTypography-body1-43 MuiFormControlLabel-label-4"
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
   />
 </label>
 `;
 
 exports[`Switch should ignore defaultChecked 1`] = `
 <label
-  className="MuiFormControlLabel-root-1"
+  className="MuiFormControlLabel-root"
 >
   <span
-    className="MuiSwitch-root-5"
+    className="MuiSwitch-root"
   >
     <span
-      className="MuiButtonBase-root-24 MuiIconButton-root-18 MuiSwitchBase-root-14 MuiSwitch-switchBase-8 MuiSwitch-colorSecondary-11"
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiSwitch-switchBase MuiSwitch-colorSecondary"
       onBlur={[Function]}
       onCheck={[Function]}
+      onDragLeave={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -173,29 +175,29 @@ exports[`Switch should ignore defaultChecked 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-23"
+        className="MuiIconButton-label"
       >
-        <span
-          className="MuiSwitch-icon-6"
-        />
         <input
           checked={false}
-          className="MuiSwitchBase-input-17"
+          className="PrivateSwitchBase-input-22 MuiSwitch-input"
           name="myCheckbox"
           onChange={[Function]}
           type="checkbox"
         />
+        <span
+          className="MuiSwitch-thumb"
+        />
       </span>
       <span
-        className="MuiTouchRipple-root-27"
+        className="MuiTouchRipple-root"
       />
     </span>
     <span
-      className="MuiSwitch-bar-13"
+      className="MuiSwitch-track"
     />
   </span>
   <span
-    className="MuiTypography-root-34 MuiTypography-body1-43 MuiFormControlLabel-label-4"
+    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
   />
 </label>
 `;
