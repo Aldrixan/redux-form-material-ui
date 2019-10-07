@@ -1,9 +1,10 @@
 ---
-# redux-form-material-ui
+# redux-form-material-ui-adapter
 ---
 
-[![NPM Version](https://img.shields.io/npm/v/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)  
-[![NPM Downloads](https://img.shields.io/npm/dm/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)  
+[![NPM Version](https://img.shields.io/npm/v/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)
+[![NPM Downloads](https://img.shields.io/npm/dm/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)
+[![Coverage Status](https://coveralls.io/repos/github/Aldrixan/redux-form-material-ui-adapter/badge.svg?branch=master)](https://coveralls.io/github/Aldrixan/redux-form-material-ui-adapter?branch=master)
 [`redux-form-material-ui-adapter`](https://github.com/Aldrixan/redux-form-material-ui) is a set of wrappers to facilitate the use of [`material-ui`](https://github.com/callemall/material-ui) components with [`redux-form`](https://github.com/erikras/redux-form). This library was forked from the original [`redux-form-material-ui`](https://github.com/erikras/redux-form-material-ui) and updated to use the latest versions of all dependencies
 
 **Latest version supports material-ui up to version 4.x.x**

@@ -13,6 +13,7 @@
         "lint": "eslint src",
         "prepublish": "npm run test && npm run lint && npm run clean && npm run build",
         "test": "jest",
+        "test:codecov": "jest --coverage --coverageReporters=text-lcov | coveralls",
         "test:watch": "npm test -- --watch"
     },
     "keywords": [
@@ -37,6 +38,7 @@
         "@material-ui/core": "^4.5.0",
         "babel-eslint": "^10.0.3",
         "babel-jest": "^24.9.0",
+        "coveralls": "^3.0.6",
         "cross-env": "^6.0.3",
         "eslint": "^6.5.1",
         "eslint-config-react-app": "^5.0.2",
