@@ -10,7 +10,6 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
 
 node_js:
-  - "7"
   - "8"
   - "10"
   - "stable"
