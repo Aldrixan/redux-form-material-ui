@@ -1,7 +1,7 @@
 import FormControl from '@material-ui/core/FormControl';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import React from 'react';
+import {getHelperText} from './utils';
 
 export default function ReduxFormMaterialUIRadioGroup({
     input,
@@ -16,13 +16,7 @@ export default function ReduxFormMaterialUIRadioGroup({
             <RadioGroup {...input} {...rest}>
                 {children}
             </RadioGroup>
-            {(touched && (error || warning)) || helperText ? (
-                <FormHelperText>
-                    {touched && (error || warning)
-                        ? error || warning
-                        : helperText}
-                </FormHelperText>
-            ) : null}
+            {getHelperText(touched, error, warning, helperText)}
         </FormControl>
     );
 }
