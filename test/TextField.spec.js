@@ -20,73 +20,53 @@ describe("TextField", () => {
         container = null;
     });
 
-    it ('renders a TextField', () => {
+    test ('renders a TextField', () => {
         act(() => {
-            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{}} />, container);
+            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{}} helperText='FooHelper' />, container);
         })
-        expect(container.querySelector('input[name="myText"]')).toBeDefined();
+        let element = container.querySelector('input[name="myText"]');
+        expect(element).toBeDefined();
+        expect(element.getAttribute('value')).toEqual('Foo');
+        expect(container.querySelector('p').textContent).toEqual('FooHelper');
     })
-    // it("renders a TextField", () => {
-    //     const component = renderer.create(
-    //         <ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{}} />
-    //     )
-    //     let tree = component.toJSON()
-    //     expect(tree).toMatchSnapshot()
-    // })
 
-    // it("renders a TextField with no error when not touched", () => {
-    //     const component = renderer.create(
-    //         <ReduxFormMaterialUITextField
-    //             input={{ onChange: noop, name: "myText", value: "Foo" }}
-    //             meta={{ error: "FooError" }}
-    //         />
-    //     )
-    //     let tree = component.toJSON()
-    //     expect(tree).toMatchSnapshot()
-    // })
+    test('renders a TextField with no error', () => {
+        act(() => {
+            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{error: 'FooError'}} />, container);
+        })
+        let element = container.querySelector('p');
+        expect(element).toBeNull();
+    })
 
-    // it("renders a TextField with an error", () => {
-    //     const component = renderer.create(
-    //         <ReduxFormMaterialUITextField
-    //             input={{ onChange: noop, name: "myText", value: "Foo" }}
-    //             meta={{ error: "FooError", touched: true }}
-    //         />
-    //     )
-    //     let tree = component.toJSON()
-    //     expect(tree).toMatchSnapshot()
-    // })
+    test('renders a TextField with an error', () => {
+        act(() => {
+            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{error: 'FooError', touched: true}} />, container);
+        })
+        let element = container.querySelector('p');
+        expect(element.textContent).toEqual('FooError');
+    })
 
-    // it("renders a TextField with no warning when not touched", () => {
-    //     const component = renderer.create(
-    //         <ReduxFormMaterialUITextField
-    //             input={{ onChange: noop, name: "myText", value: "Foo" }}
-    //             meta={{ error: "FooWarning" }}
-    //         />
-    //     )
-    //     let tree = component.toJSON()
-    //     expect(tree).toMatchSnapshot()
-    // })
+    test('renders a TextField with no warning', () => {
+        act(() => {
+            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{warning: 'FooWarn'}} />, container);
+        })
+        let element = container.querySelector('p');
+        expect(element).toBeNull();
+    })
 
-    // it("renders a TextField with an warning", () => {
-    //     const component = renderer.create(
-    //         <ReduxFormMaterialUITextField
-    //             input={{ onChange: noop, name: "myText", value: "Foo" }}
-    //             meta={{ error: "FooWarning", touched: true }}
-    //         />
-    //     )
-    //     let tree = component.toJSON()
-    //     expect(tree).toMatchSnapshot()
-    // })
+    test('renders a TextField with an warning', () => {
+        act(() => {
+            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{warning: 'FooWarn', touched: true}} />, container);
+        })
+        let element = container.querySelector('p');
+        expect(element.textContent).toEqual('FooWarn');
+    })
 
-    // it("should ignore defaultValue", () => {
-    //     const component = renderer.create(
-    //         <ReduxFormMaterialUITextField
-    //             input={{ onChange: noop, name: "myText", value: "Foo" }}
-    //             defaultValue="5"
-    //             meta={{ error: "FooWarning", touched: true }}
-    //         />
-    //     )
-    //     let tree = component.toJSON()
-    //     expect(tree).toMatchSnapshot()
-    // })
+    test('renders a TextField without defaultValue', () => {
+        act(() => {
+            render(<ReduxFormMaterialUITextField input={{ onChange: noop, name: "myText", value: "Foo" }} meta={{warning: 'FooWarn', touched: true}} defaultValue={5} />, container);
+        })
+        let element = container.querySelector('input[name="myText"]');
+        expect(element.getAttribute('value')).toEqual('Foo');
+    })
 })

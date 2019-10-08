@@ -4,8 +4,9 @@ import TextField from "@material-ui/core/TextField"
 export default function ReduxFormMaterialUITextField({
     label,
     input,
-    meta: { touched, invalid, error },
+    meta: { touched, invalid, error, warning },
     defaultValue,
+    helperText,
     ...custom
 }) {
     return (
@@ -13,7 +14,7 @@ export default function ReduxFormMaterialUITextField({
             label={label}
             placeholder={label}
             error={touched && invalid}
-            helperText={touched && error}
+            helperText={(touched && (error || warning)) || helperText}
             {...input}
             {...custom}
         />
