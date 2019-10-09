@@ -1,3 +1,6 @@
+6.1.1
+    - Refactored unit tests
+    - Fixed onCheck attribute with onChange (ISS-7)
 6.1.0
     - Fixed placement of classname attribute on select component
     - Adjusted FormHelperText element to only exist if there is text to display
