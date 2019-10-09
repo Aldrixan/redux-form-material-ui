@@ -1,36 +1,55 @@
+import { render, unmountComponentAtNode } from 'react-dom';
+
 import React from "react"
 import ReduxFormMaterialUISwitch from "../src/Switch"
+import { act } from 'react-dom/test-utils';
 import noop from "lodash.noop"
-import renderer from "react-test-renderer"
 
-describe("Switch", () => {
-    it("renders an unchecked Switch", () => {
-        const component = renderer.create(<ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} />)
-        let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+// import renderer from "react-test-renderer"
 
-    it("renders a checked Switch", () => {
-        const component = renderer.create(
-            <ReduxFormMaterialUISwitch input={{ value: true, onChange: noop, name: "mySwitch" }} />
-        )
-        let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+describe( "Switch", () => {
+    let container = null;
+    beforeEach( () => {
+        container = document.createElement( 'div' );
+        document.body.appendChild( container );
+    } )
 
-    it("should ignore checked", () => {
-        const component = renderer.create(
-            <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} checked={true} />
-        )
-        let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
+    afterEach( () => {
+        unmountComponentAtNode( container );
+        container.remove();
+        container = null;
+    } );
 
-    it("should ignore defaultChecked", () => {
-        const component = renderer.create(
-            <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "myCheckbox" }} defaultChecked={true} />
-        )
-        let tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
-    })
-})
+    test( 'renders an unchecked Switch', () => {
+        act( () => {
+            render( <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} />, container );
+        } )
+        let element = container.querySelector( 'input[name="mySwitch"]' );
+        expect( element ).toBeDefined();
+        expect( element.checked ).toBeFalsy()
+    } )
+
+    test( 'renders a checked Switch', () => {
+        act( () => {
+            render( <ReduxFormMaterialUISwitch input={{ value: true, onChange: noop, name: "mySwitch" }} />, container );
+        } )
+        let element = container.querySelector( 'input[name="mySwitch"]' );
+        expect( element.checked ).toBeTruthy()
+    } )
+
+    test( 'should ignore checked', () => {
+        act( () => {
+            render( <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} checked={true} />, container );
+        } )
+        let element = container.querySelector( 'input[name="mySwitch"]' );
+        expect( element.checked ).toBeFalsy()
+    } )
+
+    test( 'should ignore defaultChecked', () => {
+        act( () => {
+            render( <ReduxFormMaterialUISwitch input={{ onChange: noop, name: "mySwitch" }} defaultChecked={true} />, container );
+        } )
+        let element = container.querySelector( 'input[name="mySwitch"]' );
+        expect( element.checked ).toBeFalsy();
+    } )
+} )
