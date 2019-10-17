@@ -93,6 +93,7 @@
     ],
     "dependencies": {
         "@babel/polyfill": "^7.6.0",
+        "@material-ui/pickers": "^3.2.7",
         "@types/material-ui": "^0.21.7",
         "core-js": "^3.2.1"
     }
