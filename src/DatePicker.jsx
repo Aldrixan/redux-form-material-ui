@@ -1,9 +1,9 @@
-import { KeyboardDatePicker, KeyboardTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
+import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
 
 import DateFnsUtils from "@date-io/date-fns"
 import React from "react"
 
-export default function ReduxFormMaterialUITextField({
+export default function ReduxFormMaterialUIDatePicker({
     label,
     input: { onChange, ...inputProps },
     meta: { touched, invalid, error, warning },
