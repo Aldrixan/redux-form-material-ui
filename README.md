@@ -2,10 +2,10 @@
 # redux-form-material-ui-adapter
 ---
 
-[![NPM Version](https://img.shields.io/npm/v/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)
-[![NPM Downloads](https://img.shields.io/npm/dm/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)
-[![Coverage Status](https://coveralls.io/repos/github/Aldrixan/redux-form-material-ui-adapter/badge.svg?branch=master)](https://coveralls.io/github/Aldrixan/redux-form-material-ui-adapter?branch=master)
-[![Build Status](https://travis-ci.com/Aldrixan/redux-form-material-ui-adapter.svg?branch=master)](https://travis-ci.com/Aldrixan/redux-form-material-ui-adapter)
+[![NPM Version](https://img.shields.io/npm/v/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)  
+[![NPM Downloads](https://img.shields.io/npm/dm/redux-form-material-ui-adapter.svg?style=flat-square)](https://www.npmjs.com/package/redux-form-material-ui-adapter)  
+[![Coverage Status](https://coveralls.io/repos/github/Aldrixan/redux-form-material-ui-adapter/badge.svg?branch=master)](https://coveralls.io/github/Aldrixan/redux-form-material-ui-adapter?branch=master)  
+[![Build Status](https://travis-ci.com/Aldrixan/redux-form-material-ui-adapter.svg?branch=master)](https://travis-ci.com/Aldrixan/redux-form-material-ui-adapter)  
 [`redux-form-material-ui-adapter`](https://github.com/Aldrixan/redux-form-material-ui) is a set of wrappers to facilitate the use of [`material-ui`](https://github.com/callemall/material-ui) components with [`redux-form`](https://github.com/erikras/redux-form). This library was forked from the original [`redux-form-material-ui`](https://github.com/erikras/redux-form-material-ui) and updated to use the latest versions of all dependencies
 
 **Latest version supports material-ui up to version 4.x.x**
@@ -108,14 +108,14 @@ Because of the strict "controlled component" nature of `redux-form`, some of the
 
 ## Support
 
-Reach out to me at one of the following places:
-E-Mail: aldrixan@gmail.com
+Reach out to me at one of the following places:  
+E-Mail: aldrixan86@gmail.com
 
 ## Contributing
 
 [(Back to top)](#table-of-contents)
-Your contributions are always welcome! Please have a look at the [contribution guidelines](CONTRIBUTING.md) first. :tada:
-For major changes, please open an issue first to discuss what you would like to change.
+Your contributions are always welcome! Please have a look at the [contribution guidelines](CONTRIBUTING.md) first. :tada:  
+For major changes, please open an issue first to discuss what you would like to change.  
 Please make sure to update tests as appropriate.
 
 ## License
