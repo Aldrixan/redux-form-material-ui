@@ -13,6 +13,18 @@ export default function ReduxFormMaterialUISelect({
     className,
     ...props
 }) {
+    /*
+        On form control:
+        flex-direction: row
+        align-items: flex-start;
+
+        On label:
+        position: relative;
+        padding-right: theme-spacing
+
+        On InputBase:
+        flex-grow: 1
+    */
     return (
         <FormControl error={touched && !!error} className={className}>
             <InputLabel htmlFor={name}>{props.label}</InputLabel>
