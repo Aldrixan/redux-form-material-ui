@@ -99,6 +99,7 @@
     "dependencies": {
         "@babel/polyfill": "^7.6.0",
         "@types/material-ui": "^0.21.7",
+        "classnames": "^2.2.6",
         "core-js": "^3.2.1"
     }
 }
