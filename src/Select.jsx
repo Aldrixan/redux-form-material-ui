@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     },
     label: {
         position: "relative",
-        paddingRight: theme.spacing,
+        paddingRight: theme.spacing(),
     },
     base: {
         flexGrow: 1,
