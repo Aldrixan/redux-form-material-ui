@@ -8,8 +8,7 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexDirection: "row",
-        alignItems: "flex-start",
+        flexDirection: "column",
     },
     label: {
         position: "relative",
@@ -18,6 +17,11 @@ const useStyles = makeStyles(theme => ({
     base: {
         flexGrow: 1,
     },
+    innerRoot: {
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        display: 'flex'
+    }
 }))
 
 export default function ReduxFormMaterialUISelect({
@@ -47,14 +51,18 @@ export default function ReduxFormMaterialUISelect({
         <FormControl
             error={touched && !!error}
             className={cx(className, labelPlacement === "left" ? classes.root : "")}
-            fullWidth={props.fullWidth}
-            >
-            <InputLabel htmlFor={name} className={labelPlacement === "left" ? classes.label : ""} shrink={labelPlacement === 'left' ? false : !!input.value || meta.active}>
-                {props.label}
-            </InputLabel>
-            <Select {...input} {...props} className={labelPlacement === "left" ? classes.base : ""}>
-                {children}
-            </Select>
+            fullWidth={props.fullWidth}>
+            <div className={labelPlacement === "left" ? classes.innerRoot : ""}>
+                <InputLabel
+                    htmlFor={name}
+                    className={labelPlacement === "left" ? classes.label : ""}
+                    shrink={labelPlacement === "left" ? false : !!input.value || meta.active}>
+                    {props.label}
+                </InputLabel>
+                <Select {...input} {...props} className={labelPlacement === "left" ? classes.base : ""}>
+                    {children}
+                </Select>
+            </div>
             {getHelperText(touched, error, warning, helperText)}
         </FormControl>
     )
