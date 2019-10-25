@@ -19,22 +19,38 @@
 Using [npm](https://www.npmjs.org/):
 
 ```bash
-  $ npm install --save redux-form-material-ui-adapter
+  $ npm install --save redux-form-material-ui-adapter @material-ui/core
 ```
 
 Using [yarn](https://yarnpkg.com):
 
 ```bash
-  $ yarn add redux-form-material-ui-adapter
+  $ yarn add redux-form-material-ui-adapter @material-ui/core
+```
+
+If you will be using the DatePicker component, you will also need to install `@material-ui/pickers`
+
+Using [npm](https://www.npmjs.org/):
+
+```bash
+  $ npm install --save @material-ui/pickers
+```
+
+Using [yarn](https://yarnpkg.com):
+
+```bash
+  $ yarn add @material-ui/pickers
 ```
 
 ## Available Components
 
 -   [Checkbox](https://material-ui.com/api/checkbox/)
+-   [DatePicker](https://material-ui-pickers.dev/api/KeyboardDatePicker)
 -   [RadioGroup](https://material-ui.com/api/radio-group/)
 -   [Select](https://material-ui.com/api/select/)
--   [TextField](https://material-ui.com/api/text-field/)
+-   [Slider](https://material-ui.com/api/slider)
 -   [Switch](https://material-ui.com/api/switch/)
+-   [TextField](https://material-ui.com/api/text-field/)
 
 ## Usage
 
@@ -109,16 +125,17 @@ Because of the strict "controlled component" nature of `redux-form`, some of the
 ## Support
 
 Reach out to me at one of the following places:  
-E-Mail: aldrixan86@gmail.com
+E-Mail: aldrixan86@gmail.com  
+Github Issues: [https://github.com/Aldrixan/redux-form-material-ui-adapter/issues](https://github.com/Aldrixan/redux-form-material-ui-adapter/issues)
 
 ## Contributing
 
-[(Back to top)](#table-of-contents)
+[(Back to top)](#table-of-contents)  
 Your contributions are always welcome! Please have a look at the [contribution guidelines](CONTRIBUTING.md) first. :tada:  
 For major changes, please open an issue first to discuss what you would like to change.  
 Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)  
 By submitting a pull request for this project, you agree to license your contribution under the MIT license to this project.
